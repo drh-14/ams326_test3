@@ -8,7 +8,7 @@ class Q2:
         self.curve = lambda t: abs(np.sin(2 * t))
         self.lengths = np.array([1/10, 1/5, 1/4, 1/3, 1/2, 1])
         
-    def solve(self, N = 10000):
+    def solve(self, N = 1000):
         for length in self.lengths:
             hits = 0
             for _ in range(N):
